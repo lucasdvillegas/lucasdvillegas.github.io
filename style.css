@@ -4,21 +4,19 @@
     *Definir paleta de colores ✓
     *Cambiar el fondo por uno con menos ruido ✓
     *Terminar de acomodar todas las secciones ✓
-    
-    TODO: Detalles a corregir:
-    *Márgenes más grandes entre títulos de secciones
-    *Títulos de secciones más grandes
-
+    *Márgenes más grandes entre títulos de secciones ✓
+    *Títulos de secciones más grandes ✓
 
     TODO: Cambios/arreglos a realizar:
-
-    *Diseñar fav.icon
     *Acomodar las font-family y usar Roboto
-    *Recortar bien la foto y mejorar el efecto blanco y negro
     *Adaptar con media queries para 1440p
     *Adaptar con media queries para tablet
     *Adaptar con media queries para móvil
     *Diseñar una navbar estilo móvil 
+
+    TODO: Cambios que realiza Mili:
+    *Recortar bien la foto y mejorar el efecto blanco y negro
+    *Diseñar fav.icon
 
     Animaciones:
     *Añadir 'selected' botón del nav marcado cuando se encuentra en su sección
@@ -257,12 +255,14 @@ main {
     margin: 3% 10%;
 }
 
-main #about, #project, #contact {
-    margin: 150px 0;
+
+main hr {
+    border: none;
+    margin-bottom: 100px;
 }
 
 h2 {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-family: var(--primary-font);
     font-size: 30px;
 }
@@ -286,10 +286,10 @@ p{
     font-size: 18px;
 }
 
-main section #about, #project, #contact {
+/* main section #about, #project, #contact {
     margin-top: 200px;
     box-sizing:content-box;
-}
+} */
 
 main section, #about h2, #project h2, #contact h2{
     color: var(--secondary-color);
@@ -407,7 +407,7 @@ main section, #about h2, #project h2, #contact h2{
 
 .card-details p {
     color: var(--tertiary-color);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card .card-footer{
@@ -460,8 +460,7 @@ main section, #about h2, #project h2, #contact h2{
     color: var(--secondary-color);
 }
 
-
-#contact .contact-container-box form{
+.contact-container-box form{
     width: 450px;
     margin: auto;
     background: none;
@@ -474,12 +473,12 @@ main section, #about h2, #project h2, #contact h2{
     opacity: 0.85;
 }
 
-#contact .contact-container form label{
+.contact-container form label{
     color: var(--tertiary-color);
     font-family: var(--tertiary-font);
 }
 
-#contact .contact-container input, textarea{
+.contact-container input, textarea{
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -494,13 +493,13 @@ main section, #about h2, #project h2, #contact h2{
 }
 
 
-#contact .contact-container form #button{
-    color: var(--tertiary-color);
-    background-color: var(--secondary-color);
-    font-family: 'Poppins', sans-serif;
+.contact-container form #button{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    font-family: 'Roboto', sans-serif;
 }
 
-#contact .contact-container form #button:hover{
+.contact-container form #button:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
@@ -508,7 +507,9 @@ main section, #about h2, #project h2, #contact h2{
                 0 0 10px var(--secondary-color);
 }
 
-
+footer {
+    text-align: center;
+}
 
 @media (max-width: 950px) {
     header nav {
