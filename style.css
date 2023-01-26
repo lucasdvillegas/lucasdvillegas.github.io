@@ -8,6 +8,7 @@
     *Títulos de secciones más grandes ✓
 
     TODO: Cambios/arreglos a realizar:
+    *Agregar habilidad blanda "comunicación"
     *Acomodar las font-family y usar Roboto
     *Adaptar con media queries para 1440p
     *Adaptar con media queries para tablet
@@ -65,7 +66,7 @@
 
 
 html {
-    background: url(./assets/img/background/fondo-ruido.jpg);
+    background: url(./assets/test/fondo-ruido.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -185,7 +186,7 @@ header  nav ul li a:hover{
     border-radius: 50%;
     z-index: 1000;
 
-    background: url(./assets/img/background/fondo-sinruido.jpg);
+    background: url(./assets/test/fondo-sinruido.jpg);
 }
 
 .loader:after {
@@ -434,18 +435,24 @@ main section, #about h2, #project h2, #contact h2{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .contact-container-box .contact-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+}
+
+.contact-container-box .contact-text h3{
+    letter-spacing: 5px;
 }
 
 .contact-container-box .contact-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     margin: 10px 0;
 }
 
@@ -462,7 +469,7 @@ main section, #about h2, #project h2, #contact h2{
 
 .contact-container-box form{
     width: 450px;
-    margin: auto;
+    /* margin: auto; */
     background: none;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -497,14 +504,15 @@ main section, #about h2, #project h2, #contact h2{
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     font-family: 'Roboto', sans-serif;
+    border: none;
 }
 
 .contact-container form #button:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
-    box-shadow:  0 0 10px var(--secondary-color),
-                0 0 10px var(--secondary-color);
+    /* box-shadow:  0 0 5px var(--secondary-color),
+                0 0 5px var(--secondary-color); */
 }
 
 footer {
