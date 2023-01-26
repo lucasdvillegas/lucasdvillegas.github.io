@@ -292,7 +292,7 @@ p{
     box-sizing:content-box;
 } */
 
-main section, #about h2, #project h2, #contact h2{
+main section{
     color: var(--secondary-color);
     margin: 20px 0;
 }
