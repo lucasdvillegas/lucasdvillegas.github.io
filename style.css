@@ -566,6 +566,27 @@ footer {
     }   
 }
 
+@media (min-height: 950px){
+    header nav{
+        right: 1em;
+        top: 20%;
+    }
+}
+
+@media (max-height: 950px) {
+    header nav{
+        right: 1em;
+        top: 7em;
+    }
+}
+
+@media (max-height: 800px) {
+    header nav{
+        right: 1em;
+        top: 4em;
+    }
+}
+
 @media (max-height: 650px) {
     html{
         overflow-x: hidden;
@@ -592,3 +613,5 @@ footer {
         padding: 0;
     }
 }
+
+/*MEDIA QUERIES MOBILE*/
