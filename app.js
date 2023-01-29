@@ -10,10 +10,10 @@ function changeNav(){
     let w = document.documentElement.clientWidth;
 
     if (w < 601){
-        home.innerHTML = '<i class="fa-solid fa-house"></i>';
-        about.innerHTML = '<i class="fa-solid fa-user"></i>';
-        project.innerHTML = '<i class="fa-sharp fa-solid fa-computer"></i>';
-        contact.innerHTML = '<i class="fa-solid fa-envelope"></i>';
+        home.innerHTML = '<i class="fa-solid fa-house" alt="home"></i>';
+        about.innerHTML = '<i class="fa-solid fa-user" alt="about-me"></i>';
+        project.innerHTML = '<i class="fa-sharp fa-solid fa-computer" alt="projects"></i>';
+        contact.innerHTML = '<i class="fa-solid fa-envelope" alt="contact"></i>';
     }else{
         home.innerHTML = '<a href="#home">INICIO</a>';
         about.innerHTML = '<a href="#about">SOBRE MI</a>';

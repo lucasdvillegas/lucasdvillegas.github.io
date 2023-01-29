@@ -419,6 +419,14 @@ main section{
 
 /*SECTION CONTACT*/
 
+#mate-icon {
+    max-width: 18px;
+    margin-bottom: -1.5px;
+}
+#mate-icon img{
+    width: 100%;
+    height: auto;
+}
 
 .contact-container-box {
     display: flex;
