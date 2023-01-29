@@ -7,19 +7,19 @@
     *Márgenes más grandes entre títulos de secciones ✓
     *Títulos de secciones más grandes ✓
     *Adaptar con media queries para tablet ✓
+    *Diseñar una navbar estilo móvil ✓
 
     TODO: Cambios/arreglos a realizar:
     *Adaptar con media queries para móvil a partir de 600px de width
-    *Diseñar una navbar estilo móvil 
     *Agregar habilidad blanda "comunicación"
     *Acomodar las font-family y usar Roboto
-    *Adaptar con media queries para 1440p
+    *Adaptar con font size y resolución de img para 1440p
 
     TODO: Cambios que realiza Mili:
     *Recortar bien la foto y mejorar el efecto blanco y negro
     *Diseñar fav.icon
 
-    Animaciones:
+    TODO: Animaciones o JS:
     *Añadir 'selected' botón del nav marcado cuando se encuentra en su sección
     *Añadir animación de subrayado con hr o div en scrollbar.value
     *Añadir animación de opacidad en scrollbar.value
@@ -128,8 +128,14 @@ header nav ul li{
     color: var(--tertiary-color);
     font-family: var(--tertiary-font);
     transform: rotate(90deg);
-    margin: 6em 0;
+    margin: 6em 0 0 0;
 }
+
+.project, .contact{
+    margin: 7em 0 0 0;
+}
+
+
 
 header  nav ul li a{
     text-decoration: none;
@@ -139,10 +145,6 @@ header  nav ul li a{
 
 header  nav ul li a:hover{
     color: var(--secondary-color);
-    text-shadow: 0 0 10px var(--secondary-color),
-                 0 0 20px var(--secondary-color),
-                 0 0 40px var(--secondary-color),
-                 0 0 80px var(--secondary-color), ;
 }
 
 .portada {
@@ -224,7 +226,7 @@ header  nav ul li a:hover{
 
 .home-text-bottom h1{
     font-family: var(--primary-font);
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     color: var(--tertiary-color);
     font-size: 70px;
 }
@@ -412,9 +414,7 @@ main section{
 }
 
 .card .card-footer a:hover{
-    font-size: 16px;
     color: var(--secondary-color);
-    margin: 10px;
 }
 
 /*SECTION CONTACT*/
@@ -564,12 +564,23 @@ footer {
         margin: 17px 0;
         text-align: center;
     }   
+
+    header nav ul li{
+
+        margin: 6em -1.5em 0 0;
+    }
+
+    .project, .contact{
+        margin: 8em -1.5em 0 0;
+    }
 }
+
+
 
 @media (min-height: 950px){
     header nav{
         right: 1em;
-        top: 20%;
+        top: 9em;
     }
 }
 
@@ -615,3 +626,218 @@ footer {
 }
 
 /*MEDIA QUERIES MOBILE*/
+
+@media (max-width: 600px){
+
+    main {
+        margin: 3% 6%;
+    }
+
+
+    header {
+        height: 82vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        overflow-x: hidden;
+    }
+
+    header nav ul{
+        width: 100%;
+        height: 55px;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        
+        background-color: var(--primary-color);
+
+        z-index: 999;
+
+        overflow-x: hidden;
+    }
+
+    header nav ul li{
+        transform: rotate(0);
+        margin: 0;
+    }
+
+    header nav ul li a{
+        margin: 0;
+        padding: 0;
+    }
+
+    .project, .contact{
+        margin: 0;
+    }
+
+    .home-text-bottom {
+        text-align: center;
+    }
+
+    .home-text-bottom h1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        margin-bottom: 85px;
+    }
+}
+
+/*min-width: 280px and max-width: 600px*/
+
+@media (min-width: 280px) and (max-width: 600px){
+    html {
+        overflow-x: hidden;
+    }
+    header {
+        margin-top: 20px;
+        height: 85vh;
+    }
+    
+    header .header-container .right {
+        margin-right: 0em;
+    }
+    
+    header .header-container .left{
+        margin-left: 0em;
+    }
+    .loader {
+        position: absolute;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .loader:before {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .loader:after {
+        filter: blur(6px);
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .img-container {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        bottom: -120px;
+        margin-right: 5px;
+        z-index: 1;
+    }
+
+    .home-text-bottom h1{
+        font-family: var(--primary-font);
+        letter-spacing: 5px;
+        color: var(--tertiary-color);
+        font-size: 30px;
+        /* margin-top: -50px; */
+    }
+    
+    .home-text-bottom h2{
+        font-family: var(--secondary-font);
+        letter-spacing: 0px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .contact-container-box form{
+        width: 100%;
+        background: none;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    
+        opacity: 0.85;
+    }
+}
+
+/* 240 x 280 */
+
+@media (min-width:220px) and (max-width:279px){
+    header {
+        margin-top: 20px;
+        height: 85vh;
+    }
+    
+    header .header-container .right {
+        margin-right: 0em;
+    }
+    
+    header .header-container .left{
+        margin-left: 0em;
+    }
+    .loader {
+        position: absolute;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .loader:before {
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .loader:after {
+        filter: blur(6px);
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .img-container {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        bottom: -57px;
+        margin-right: 2px;
+        z-index: 1;
+    }
+
+    .home-text-bottom h1{
+        font-family: var(--primary-font);
+        letter-spacing: 5px;
+        color: var(--tertiary-color);
+        font-size: 18px;
+        /* margin-top: -50px; */
+    }
+    
+    .home-text-bottom h2{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    
+    h3{
+        font-size: 12px;
+    }
+}
