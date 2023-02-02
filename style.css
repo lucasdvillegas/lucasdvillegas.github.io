@@ -121,25 +121,30 @@ header nav{
     top: 2em;
 }
 
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header nav ul li{
     list-style: none;
     font-size: 18px;
     color: var(--tertiary-color);
     font-family: var(--tertiary-font);
     transform: rotate(90deg);
-    margin: 6em 0 0 0;
+    margin: 3em 0;
 }
 
 .project, .contact{
-    margin: 7em 0 0 0;
+    margin: 5em 0 3em 0;
 }
-
 
 
 header  nav ul li a{
     text-decoration: none;
     color: var(--tertiary-color);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 header  nav ul li a:hover{
@@ -510,6 +515,7 @@ main section{
 
 footer {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 /* MEDIA QUERIES PARA TABLET */
@@ -536,8 +542,8 @@ footer {
     }
 
     .img-container {
-        width: 284px;
-        margin-right: 4px;
+        width: 336px;
+        margin-right: 3px;
     }
 
     /*ABOUT*/
@@ -574,11 +580,11 @@ footer {
 
     header nav ul li{
 
-        margin: 6em -1.5em 0 0;
+        margin: 6em 0 0 0;
     }
 
     .project, .contact{
-        margin: 8em -1.5em 0 0;
+        margin: 8em 0 0 0;
     }
 }
 
@@ -636,13 +642,31 @@ footer {
 
 @media (max-width: 600px){
 
+    .loader:before {
+        content: '';
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        right: 35px;
+        bottom: 35px;
+        border-radius: 50%;
+        z-index: 1000;
+    
+        background: url(./assets/test/fondo-sinruido.jpg);
+    }
+
+    .img-container {
+        width: 480px;
+        margin-right: 3px;
+    }
+
     main {
         margin: 3% 6%;
     }
 
 
     header {
-        height: 82vh;
+        height: 50vh;
         padding: 0;
         margin: 0;
     }
@@ -701,7 +725,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    footer {
+    footer p{
         margin-bottom: 85px;
     }
 }
@@ -714,7 +738,7 @@ footer {
     }
     header {
         margin-top: 20px;
-        height: 85vh;
+        height: 70vh;
     }
     
     header .header-container .right {
@@ -746,11 +770,11 @@ footer {
     }
 
     .img-container {
-        width: 200px;
+        width: 255px;
         height: auto;
         position: absolute;
-        bottom: -120px;
-        margin-right: 5px;
+        bottom: -121px;
+        margin-right: 3px;
         z-index: 1;
     }
 
