@@ -202,11 +202,11 @@ header  nav ul li a:hover{
 }
 
 .img-container {
-    width: 340px;
+    width: 400px;
     height: auto;
     position: absolute;
-    bottom: 30px;
-    margin-right: 6px;
+    bottom: 30.5px;
+    margin-right: 3.5px;
     z-index: 1;
 }
 
