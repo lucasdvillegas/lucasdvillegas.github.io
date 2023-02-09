@@ -642,6 +642,10 @@ footer {
 
 @media (max-width: 600px){
 
+    .portada {
+        margin-top: 90px;
+    }
+
     .loader:before {
         content: '';
         position: absolute;
