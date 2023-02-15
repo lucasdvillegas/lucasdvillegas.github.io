@@ -237,6 +237,7 @@ header  nav ul li a:hover{
 
 .home-text-bottom h2{
     font-family: var(--secondary-font);
+    color: var(--tertiary-color);
     letter-spacing: 2px;
     font-size: 24px;
     margin-top: 10px;
@@ -640,7 +641,7 @@ footer {
 
 /*MEDIA QUERIES MOBILE*/
 
-@media (max-width: 600px){
+@media (max-width: 688px){
 
     .portada {
         margin-top: 90px;
@@ -736,13 +737,13 @@ footer {
 
 /*min-width: 280px and max-width: 600px*/
 
-@media (min-width: 280px) and (max-width: 600px){
+@media (min-width: 280px) and (max-width: 688px){
     html {
         overflow-x: hidden;
     }
     header {
         margin-top: 20px;
-        height: 70vh;
+        height: 100vh;
     }
     
     header .header-container .right {
@@ -782,9 +783,13 @@ footer {
         z-index: 1;
     }
 
+    /* .home-text-bottom {
+        margin-top: 60px;
+    } */
+
     .home-text-bottom h1{
         font-family: var(--primary-font);
-        letter-spacing: 5px;
+        letter-spacing: 4px;
         color: var(--tertiary-color);
         font-size: 30px;
         /* margin-top: -50px; */
@@ -792,8 +797,8 @@ footer {
     
     .home-text-bottom h2{
         font-family: var(--secondary-font);
-        letter-spacing: 0px;
-        font-size: 20px;
+        letter-spacing: 0.5px;
+        font-size: 16px;
         margin-top: 10px;
     }
 
