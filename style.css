@@ -232,7 +232,7 @@ header  nav ul li a:hover{
     font-family: var(--primary-font);
     letter-spacing: 5px;
     color: var(--tertiary-color);
-    font-size: 70px;
+    font-size: 78px;
 }
 
 .home-text-bottom h2{
@@ -266,7 +266,8 @@ main hr {
 h2 {
     color: var(--secondary-color);
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 h3 {
